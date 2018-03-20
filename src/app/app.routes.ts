@@ -7,14 +7,6 @@ import {NotFoundComponent} from './shared/not-found/not-found.component';
 import {PagesComponent} from './pages/pages.component';
 
 const ROUTES: Routes = [
-  {path: '', component: PagesComponent,
-  children: [
-    {path: 'dashboard', component: DashboardComponent },
-    {path: 'progress', component: ProgressComponent },
-    {path: 'grafica1', component: Graficas1Component},
-    {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
-  ]},
-
   {path: 'login', component: LoginComponent },
   {path: '**', component: NotFoundComponent}
 ];
