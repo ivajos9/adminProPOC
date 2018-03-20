@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import {APP_ROUTES} from './app.routes';
 
 import {PagesModule} from './pages/pages.module';
+import {FormsModule} from '@angular/forms';
+import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {PagesModule} from './pages/pages.module';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
