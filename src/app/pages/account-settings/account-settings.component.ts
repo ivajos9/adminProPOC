@@ -38,7 +38,7 @@ export class AccountSettingsComponent implements OnInit {
     const tema = this._settings.ajustes.tema;
 
     for (const ref of selectores) {
-      if(ref.getAttribute('data-theme') === tema){
+      if (ref.getAttribute('data-theme') === tema){
         ref.classList.add('working');
         break;
       }
